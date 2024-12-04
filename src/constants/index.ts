@@ -8,21 +8,16 @@ import type {
 } from "../types";
 
 import {
-  mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
   meta,
   starbucks,
@@ -31,7 +26,9 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
+  devops,
+  postgres,
+  redis
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -55,17 +52,13 @@ const services: TService[] = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Software Architect",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
-  },
+    title: "To The Cloud",
+    icon: devops,
+  }
 ];
 
 const technologies: TTechnology[] = [
@@ -90,14 +83,6 @@ const technologies: TTechnology[] = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
     name: "Node JS",
     icon: nodejs,
   },
@@ -106,21 +91,17 @@ const technologies: TTechnology[] = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
+    name: "Postgres",
+    icon: postgres,
   },
   {
     name: "docker",
     icon: docker,
   },
+  {
+    name: "redis",
+    icon: redis
+  }
 ];
 
 const experiences: TExperience[] = [

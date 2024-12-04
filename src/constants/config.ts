@@ -40,14 +40,14 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "Siddharth Upadhyay — Software Engineer Portfolio",
+    title: "Siddharth Upadhyay",
     fullName: "Siddharth Upadhyay",
-    email: "sid.upadhyay.dev@mail.com",
+    email: "sidu2911@gmail.com",
   },
   hero: {
     name: "Siddharth Upadhyay",
     p: [
-      "Crafting seamless digital experiences through",
+      "I love everything-software. Crafting seamless digital experiences through",
       "scalable web applications, robust backend systems, and innovative solutions.",
     ],
   },
@@ -73,14 +73,7 @@ export const config: TConfig = {
     about: {
       p: "About Me",
       h2: "Who I Am.",
-      content: `I am a passionate software engineer with extensive experience in 
-      building modern, high-performance applications. My expertise spans
-      front-end frameworks like React and Angular, backend development with 
-      Node.js, and cutting-edge cloud solutions using AWS and GCP. Beyond 
-      solving technical challenges, I am deeply committed to delivering 
-      scalable, secure, and maintainable code that drives exceptional user 
-      experiences. Whether you're looking for a developer to bring a concept 
-      to life or enhance an existing product, I’m ready to exceed expectations.`,
+      content: `I am a passionate software engineer with extensive experience in building modern, high-performance applications. My expertise spans front-end frameworks like React and Angular, backend development with Node.js, and cutting-edge cloud solutions using AWS and GCP. Beyond solving technical challenges,  I am deeply committed to delivering scalable, secure, and maintainable code that drives exceptional user experiences. Whether you're looking for a developer to bring a concept to life or enhance an existing product.`,
     },
     experience: {
       p: "My Journey",
@@ -94,9 +87,7 @@ export const config: TConfig = {
       p: "Portfolio",
       h2: "Selected Projects.",
       content: `Explore a curated collection of my work that demonstrates 
-      my technical expertise and problem-solving abilities. Each project 
-      reflects my commitment to quality, innovation, and delivering 
-      exceptional value. Click through for live demos and code repositories.`,
+      my technical expertise and problem-solving abilities.`,
     },
   },
 };
