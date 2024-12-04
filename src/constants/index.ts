@@ -17,7 +17,7 @@ import {
   reactjs,
   nodejs,
   mongodb,
-  git,
+  // git,
   docker,
   meta,
   starbucks,
