@@ -32,6 +32,10 @@ import tripguide from "./tripguide.png";
 import devops from './aws.svg'
 import postgres from './postgresql.svg'
 import redis from './redis.svg'
+import urlRateLimiter from './url-rate-limiter.png'
+import cricketDashboard from './cricket-dashboard.png'
+
+import resume from './Siddharth_Upadhyay_Resume (1).pdf'
 
 export {
   logo,
@@ -64,5 +68,8 @@ export {
   tripguide,
   devops,
   postgres,
-  redis
+  redis,
+  urlRateLimiter,
+  cricketDashboard,
+  resume
 };

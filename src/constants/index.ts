@@ -17,18 +17,13 @@ import {
   reactjs,
   nodejs,
   mongodb,
-  // git,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
+  urlRateLimiter,
   jobit,
-  tripguide,
   devops,
   postgres,
-  redis
+  redis,
+  cricketDashboard
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -106,55 +101,27 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
+    title: "Software Engineerr",
+    companyName: "Alepo",
+    icon: web,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "June 2023 - October 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I contributed to the development of key features for mobile point-of-sale and customer care applications using the MEAN stack. My role involved seamless integration of payment gateways, optimization of API flows, and crafting exceptional user experiences.",
+      "I specialized in advanced Angular concepts like BehaviorSubjects, ReplaySubjects, and trackBy for high-performance applications. Additionally, I utilized browser history states for efficient data handling and customized legacy CRM systems using JSP to meet specific business needs.",
+      "Was the man-in-charge infra guy covering nginx and docker."
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
+    title: "SDE 1",
+    companyName: "Fynd",
+    icon: backend,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Building a scalable e-commerce analytics platform grounds up.",
+      "Integrating intricate ui, with ML and data analytic to deliver secure and reliable software.",
+      "Contributed fullstack and used K8s for easy deployment"
     ],
   },
 ];
@@ -188,67 +155,42 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "URL Rate Limiter Middleware",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A flexible and robust rate limiting middleware for Node.js applications with support for both in-memory and Redis-based storage. This rate limiter can be used in both single-server and distributed environments.",
     tags: [
       {
-        name: "react",
+        name: "nodejs",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "redis",
         color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
       },
       {
         name: "restapi",
         color: "green-text-gradient",
       },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
+    image: urlRateLimiter,
+    sourceCodeLink: "https://github.com/sid3945/url-shortener",
   },
   {
-    name: "Trip Guide",
+    name: "Cricket Dashboard",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "For the love of cricket and BGT, deployed at: https://indvaus-cric-center.netlify.app/",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+        name: "material-ui",
+        color: "green-text-gradient"
+      }
     ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    image: cricketDashboard,
+    sourceCodeLink: "https://github.com/sid3945/task-management-backend",
   },
 ];
 
