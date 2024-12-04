@@ -40,55 +40,63 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Siddharth Upadhyay — Software Engineer Portfolio",
+    fullName: "Siddharth Upadhyay",
+    email: "sid.upadhyay.dev@mail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Siddharth Upadhyay",
+    p: [
+      "Crafting seamless digital experiences through",
+      "scalable web applications, robust backend systems, and innovative solutions.",
+    ],
   },
   contact: {
-    p: "Get in touch",
-    h2: "Contact.",
+    p: "Let's Collaborate",
+    h2: "Contact Me.",
     form: {
       name: {
         span: "Your Name",
         placeholder: "What's your name?",
       },
-      email: { span: "Your Email", placeholder: "What's your email?" },
+      email: {
+        span: "Your Email",
+        placeholder: "What's your email?",
+      },
       message: {
         span: "Your Message",
-        placeholder: "What do you want to say?",
+        placeholder: "How can I assist you?",
       },
     },
   },
   sections: {
     about: {
-      p: "Introduction",
-      h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      p: "About Me",
+      h2: "Who I Am.",
+      content: `I am a passionate software engineer with extensive experience in 
+      building modern, high-performance applications. My expertise spans
+      front-end frameworks like React and Angular, backend development with 
+      Node.js, and cutting-edge cloud solutions using AWS and GCP. Beyond 
+      solving technical challenges, I am deeply committed to delivering 
+      scalable, secure, and maintainable code that drives exceptional user 
+      experiences. Whether you're looking for a developer to bring a concept 
+      to life or enhance an existing product, I’m ready to exceed expectations.`,
     },
     experience: {
-      p: "What I have done so far",
-      h2: "Work Experience.",
+      p: "My Journey",
+      h2: "Professional Experience.",
     },
     feedbacks: {
-      p: "What others say",
+      p: "What Clients Say",
       h2: "Testimonials.",
     },
     works: {
-      p: "My work",
-      h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      p: "Portfolio",
+      h2: "Selected Projects.",
+      content: `Explore a curated collection of my work that demonstrates 
+      my technical expertise and problem-solving abilities. Each project 
+      reflects my commitment to quality, innovation, and delivering 
+      exceptional value. Click through for live demos and code repositories.`,
     },
   },
 };
