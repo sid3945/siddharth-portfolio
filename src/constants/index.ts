@@ -19,7 +19,6 @@ import {
   mongodb,
   docker,
   urlRateLimiter,
-  jobit,
   devops,
   postgres,
   redis,
