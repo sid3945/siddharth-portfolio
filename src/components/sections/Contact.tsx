@@ -1,17 +1,38 @@
+type FormField = {
+  span: string;
+  placeholder: string;
+};
+
+type ContactForm = {
+  name: FormField;
+  email: FormField;
+  message: FormField;
+};
+
+interface ContactConfig {
+  p: string;
+  h2: string;
+  form: ContactForm;
+}
+
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
-// import { EarthCanvas } from "../canvas";
 import { SectionWrapper } from "../../hoc";
 import { slideIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 import PDFViewer from "./PDFViewer";
 
-const INITIAL_STATE = Object.fromEntries(
-  Object.keys(config.contact.form).map((input) => [input, ""])
-);
+type FormValues = {
+  [K in keyof ContactForm]: string;
+};
+
+const INITIAL_STATE: FormValues = {
+  name: "",
+  email: "",
+  message: "",
+};
 
 const emailjsConfig = {
   serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -20,20 +41,18 @@ const emailjsConfig = {
 };
 
 const Contact = () => {
-  const formRef = useRef<React.LegacyRef<HTMLFormElement> | undefined>();
-  const [form, setForm] = useState(INITIAL_STATE);
+  const formRef = useRef<HTMLFormElement>(null);
+  const [form, setForm] = useState<FormValues>(INITIAL_STATE);
   const [loading, setLoading] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> | undefined
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    if (e === undefined) return;
     const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
+    setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement> | undefined) => {
-    if (e === undefined) return;
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
@@ -54,13 +73,11 @@ const Contact = () => {
         () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
-
           setForm(INITIAL_STATE);
         },
         (error) => {
           setLoading(false);
-
-          console.log(error);
+          console.error(error);
           alert("Something went wrong.");
         }
       );
@@ -80,7 +97,7 @@ const Contact = () => {
             onSubmit={handleSubmit}
             className="flex-1 flex flex-col gap-8"
           >
-            {Object.keys(config.contact.form).map((input) => {
+            {(Object.keys(config.contact.form) as Array<keyof ContactForm>).map((input) => {
               const { span, placeholder } = config.contact.form[input];
               const Component = input === "message" ? "textarea" : "input";
 
