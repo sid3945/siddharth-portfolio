@@ -73,7 +73,7 @@ export const config: TConfig = {
     about: {
       p: "About Me",
       h2: "Who I Am.",
-      content: `I am a passionate software engineer with extensive experience in building modern, high-performance applications. My expertise spans front-end frameworks like React and Angular, backend development with Node.js, and cutting-edge cloud solutions using AWS and GCP. Beyond solving technical challenges,  I am deeply committed to delivering scalable, secure, and maintainable code that drives exceptional user experiences. Whether you're looking for a developer to bring a concept to life or enhance an existing product.`,
+      content: `I have an extensive experience building modern, high-performance applications. My expertise spans robust and scalable backend using Nodejs, minimalist & performant interfaces using front-end frameworks React and Angular, scaling them using using AWS and K8s. Whether you're looking for a developer to bring a concept to life or enhance an existing product I am your Man.`,
     },
     experience: {
       p: "My Journey",
