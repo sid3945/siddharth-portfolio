@@ -9,12 +9,6 @@ type ContactForm = {
   message: FormField;
 };
 
-interface ContactConfig {
-  p: string;
-  h2: string;
-  form: ContactForm;
-}
-
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
