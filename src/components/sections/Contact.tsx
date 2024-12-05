@@ -60,6 +60,7 @@ const Contact = () => {
           from_email: form.email,
           to_email: config.html.email,
           message: form.message,
+          reply_to: form.email
         },
         emailjsConfig.accessToken
       )
