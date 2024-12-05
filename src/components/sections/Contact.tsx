@@ -17,6 +17,7 @@ import { slideIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 import PDFViewer from "./PDFViewer";
+import { styles } from "../../constants/styles";
 
 type FormValues = {
   [K in keyof ContactForm]: string;
@@ -37,7 +38,11 @@ const emailjsConfig = {
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [form, setForm] = useState<FormValues>(INITIAL_STATE);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [loading, setLoading] = useState(false);
+  
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -67,7 +72,8 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          openModal()
+          // alert("Thank you. I will get back to you as soon as possible.");
           setForm(INITIAL_STATE);
         },
         (error) => {
@@ -124,6 +130,22 @@ const Contact = () => {
           </div>
         </div>
       </motion.div>
+      {isModalOpen && (
+        <div className={styles.modalOverlay}>
+          <div className={styles.modalContent}>
+            <h2 className={styles.modalTitle}>Thank you.</h2>
+            <p className={styles.modalText}>
+              I will get back to you as soon as possible.
+            </p>
+            <button
+              className={styles.modalButton}
+              onClick={closeModal}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
