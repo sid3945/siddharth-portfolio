@@ -182,7 +182,7 @@ VITE_EMAIL_JS_ACCESS_TOKEN=<VITE_EMAIL_JS_ACCESS_TOKEN>
 ```
 
 ## 🔧 Acknowledgement
-I owe deep gratitude to the developer behind the repo [Reactjs 3D Portfolio](https://github.com/ladunjexa/reactjs18-3d-portfolio). I have always wanted to have a portfolio and a cool one and the Reactjs18-3d-portfolio was much more than I could have asked for `:))`
+I owe deep gratitude to the [developer](https://www.linkedin.com/in/lironabutbul/) behind the repo [Reactjs 3D Portfolio](https://github.com/ladunjexa/reactjs18-3d-portfolio). I have always wanted to have a portfolio and a cool one and the Reactjs18-3d-portfolio was much more than I could have asked for `:))`
 
 ## 📋 License
 **Portfolio** is free for all possible uses. 
