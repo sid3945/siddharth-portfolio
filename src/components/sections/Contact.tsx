@@ -55,7 +55,7 @@ const Contact = () => {
         emailjsConfig.serviceId,
         emailjsConfig.templateId,
         {
-          form_name: form.name,
+          from_name: form.name,
           to_name: config.html.fullName,
           from_email: form.email,
           to_email: config.html.email,
