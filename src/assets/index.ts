@@ -35,8 +35,6 @@ import redis from './redis.svg'
 import urlRateLimiter from './url-rate-limiter.png'
 import cricketDashboard from './cricket-dashboard.png'
 
-import resume from './Siddharth_Upadhyay_Resume (1).pdf'
-
 export {
   logo,
   backend,
@@ -71,5 +69,4 @@ export {
   redis,
   urlRateLimiter,
   cricketDashboard,
-  resume
 };
